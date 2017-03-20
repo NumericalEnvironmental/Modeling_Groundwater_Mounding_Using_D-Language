@@ -1,0 +1,12 @@
+t_end	180
+gridder	true
+x0	-500
+xf	1000
+x_int	60
+y0	-500
+yf	1000
+y_int	60
+particle_trace	true
+dt	5
+d_max	10
+monitor	true

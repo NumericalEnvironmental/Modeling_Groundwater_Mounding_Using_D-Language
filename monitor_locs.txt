@@ -1,0 +1,4 @@
+location	x	y
+MW-1	300	-100
+MW-2	100	0
+Main_basin 0.	0.
