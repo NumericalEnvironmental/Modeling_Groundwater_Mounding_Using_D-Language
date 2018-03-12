@@ -10,9 +10,9 @@
 
 import std.stdio; 			// I/O and file system
 import std.math; 			// math function library
-import std.mathspecial; 	// error function
+import std.mathspecial; 		// error function
 import std.conv; 			// automatic conversions between types
-import std.typecons; 		// misc. meta-programming support, including type constructors, tuples, etc.
+import std.typecons; 			// misc. meta-programming support, including type constructors, tuples, etc.
 import std.string; 			// string function support
 
 
@@ -226,7 +226,7 @@ class Tracker {
 					auto p = FixPosition(x[i], y[i], t, vx0, vy0, dt_eff, aquifer, basin, well);		
 					x[i] = p[0];
 					y[i] = p[1];
-					assert(isnan(x[i])==false, "Particle tracking failure; check convergence.");
+					assert(isNaN(x[i])==false, "Particle tracking failure; check convergence.");
 					offset = Dist(x[i], y[i], x0, y0);
 					if ((offset <= model.d_max) || (iter >= max_iter)){converge=true;}
 					else {
